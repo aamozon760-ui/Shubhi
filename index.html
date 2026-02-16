@@ -67,6 +67,27 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* NOTES FADE IN ANIMATION */
+.note{
+    opacity:0;
+    transform: translateY(30px);
+    animation: fadeUp 1s forwards;
+}
+
+.note:nth-of-type(1){ animation-delay:0.5s; }
+.note:nth-of-type(2){ animation-delay:1.5s; }
+.note:nth-of-type(3){ animation-delay:2.5s; }
+.note:nth-of-type(4){ animation-delay:3.5s; }
+.note:nth-of-type(5){ animation-delay:4.5s; }
+.note:nth-of-type(6){ animation-delay:5.5s; }
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
 </style>
 </head>
 
