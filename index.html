@@ -5,16 +5,7 @@
 <title>A Note For You</title>
 
 <style>
-    <script>
-document.body.addEventListener("click", function() {
-  document.getElementById("bgmusic").play();
-});
-</script>
 body{
-    <audio id="bgmusic" loop>
-  <source src="https://raw.githubusercontent.com/aamozon760-ui/Shubhi/main/_By_My_Side_-_Ap_Dhillon_Aesthetic_Status_Lyrics_128KBPS.mp3" type="audio/mp3">
-</audio>
-
     margin:0;
     font-family: 'Segoe UI', sans-serif;
     text-align:center;
@@ -27,10 +18,26 @@ body{
     background-attachment: fixed;
 }
 
+/* dark overlay */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.35);
+    z-index:-1;
+}
+
 h1{
-    <p style="color:white;">🔊 Tap krogi ? Thanks for this song yr</p>
-    color:#ff4d6d;
-    margin-bottom:25px;
+    color:white;
+    margin-bottom:10px;
+}
+
+.tap{
+    color:white;
+    margin-bottom:20px;
 }
 
 .note{
@@ -46,59 +53,72 @@ h1{
     line-height:1.6;
 }
 
-
 .footer{
     margin-top:25px;
     font-size:20px;
     font-weight:bold;
-    color:#ff4d6d;
+    color:white;
 }
 </style>
 </head>
 
 <body>
 
+<!-- MUSIC -->
+<audio id="bgmusic" loop>
+  <source src="https://raw.githubusercontent.com/aamozon760-ui/Shubhi/main/_By_My_Side_-_Ap_Dhillon_Aesthetic_Status_Lyrics_128KBPS.mp3" type="audio/mp3">
+</audio>
+
 <h1>A small note for you 💌</h1>
+<p class="tap">Tap krogi? Thanks, Song ke liye </p>
 
 <div class="note">
-    Hey ANUSHKA,<br><br>
-    Thank you for being a part of my life.  
-    Even though we are not together anymore,  
-    I truly hope you have a beautiful life ahead ❤️
-</div>
-
-<div class="note">
-    Sorry for everything that hurt you,  
-    and really… thank you for the support you gave me  
-    when I needed it the most ❤️
+HEY NUSHKA,<br><br>
+Thank you for being a part of my life.  
+Even though we are not together anymore,  
+I truly hope you have a beautiful life ahead ❤️
 </div>
 
 <div class="note">
-    Best of luck for your exam  
-    I know you will clear it 
-    And if not also… government papers are not easy,So Chillll  
-    Your time will come ✨
+Sorry for everything that hurt you,  
+and really… thank you for the support you gave me  
+when I needed it the most(Pese wps krna hoon me)❤️
 </div>
 
 <div class="note">
-    We may not talk like before,  
-    but I’ll always wish good things for you
+Best of luck for your exam  
+I know you will clear it  
+And if not also… Government papers are not easy 
+Chillllll… Your time will come ✨
 </div>
 
 <div class="note">
-    Thank you for the memories,  
-    the laughs, the fights,  
-    and the “Aajao jldi wrna thapad pdhega na esa abhi” texts 😄
+We may not talk like before,  
+but I’ll always wish good things for you 
 </div>
+
 <div class="note">
-    I always felt you deserved someone better,  
-    someone who could give you everything perfectly.  
-    I truly hope you find that person 💫
+Thank you for the memories,  
+the laughs, the fights,  
+and the “Aajao jldi wrna thapad pdhega na esa abhi” texts 😄
 </div>
+
+<div class="note">
+I always felt you deserved someone better,  
+someone who could give you everything perfectly.  
+I truly hope you find that person 💫
+</div>
+
 <div class="footer">
-    Take care & stay happy Shubhi Don 
+Take care & stay happy 🌼
 </div>
-    
+
+<!-- TAP TO PLAY MUSIC -->
+<script>
+document.body.addEventListener("click", function() {
+  document.getElementById("bgmusic").play();
+});
+</script>
 
 </body>
 </html>
