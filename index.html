@@ -41,23 +41,31 @@ h1{
 }
 
 .note{
-    background: rgba(255,255,255,0.92);
-    backdrop-filter: blur(6px);
+    background: linear-gradient(135deg,#fff6f9,#ffe3ec);
     padding:18px;
-    margin:18px auto;
-    border-radius:18px;
+    margin:20px auto;
+    border-radius:22px;
     width:90%;
     max-width:420px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    box-shadow:0 12px 30px rgba(0,0,0,0.25);
     font-size:18px;
     line-height:1.6;
+    transform: rotate(-1deg);
 }
+
+/* alternate tilt for cute look */
+.note:nth-child(even){
+    transform: rotate(1deg);
+}
+
 
 .footer{
     margin-top:25px;
-    font-size:20px;
+    font-size:24px;
     font-weight:bold;
-    color:white;
+    background: linear-gradient(90deg,#ff4d6d,#ff9a9e,#ffd166);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 </style>
 </head>
